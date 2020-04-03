@@ -5,13 +5,18 @@ import './App.css';
 
 import HomePage from './components/pages/homepage/homepage.component';
 
-
+const HatsPage = () => (
+    <div className='hats-page'>
+        <h1>hats</h1>
+    </div>
+);
 
 function App() {
   return (
     <div>
         <Switch>
-            <Route  path='/' component={HomePage} />
+            <Route exact path='/' component={HomePage} />
+            <Route  path='/hats' component={HatsPage} />
         </Switch>
     </div>
   );

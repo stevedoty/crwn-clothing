@@ -5,7 +5,7 @@ import './menu-item.styles.scss';
 const MenuItem = (props) => (
     <div
         className={`${props.section.size} menu-item`}
-        onClick={() => props.section.history.push( props.section.linkUrl )}
+        onClick={() => props.history.push( props.section.linkUrl )}
     >
         <div className='background-image' style={{backgroundImage: `url(${props.section.imageUrl})`}} />
         <div className='content'>
